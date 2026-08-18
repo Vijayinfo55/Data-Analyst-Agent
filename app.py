@@ -19,7 +19,8 @@ GROQ_API_KEY = st.sidebar.text_input("Enter Groq API Key", type="password")
 
 if GOOGLE_API_KEY and GROQ_API_KEY:
     gemini_llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+    #   model="gemini-1.5-flash",
+        model = 'gemini-3.5-flash',
         google_api_key=GOOGLE_API_KEY
     )
 
